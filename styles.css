@@ -144,9 +144,9 @@ img {
 
 .proposal-button__arrow {
   position: absolute;
-  right: -8px;
-  top: -47px;
-  width: 7м4px;
+  right: 2px;
+  top: -42px;
+  width: 74px;
   height: auto;
   transform: scaleX(1);
   transform-origin: center;
