@@ -35,16 +35,18 @@ img {
 }
 
 .shell {
-  width: min(100% - 32px, 1108px);
+  width: min(100% - 32px, 1688px);
   margin: 0 auto;
 }
 
 .hero-block {
-  background-color: #77b67d;
+  background-image: url(f/23.jpg);
+  background-size: 100% 100%;
+  /* background-color: #77b67d;
   background:
     linear-gradient(rgba(118, 182, 125, 0.82), rgba(118, 182, 125, 0.82)),
     url("https://thb.tildacdn.com/tild3564-3165-4361-b433-363665636438/-/resize/20x/-min.jpg")
-      center / cover;
+      center / cover; */
   padding: 58px 0 52px;
 }
 
@@ -84,6 +86,7 @@ img {
   font-size: clamp(22px, 2.8vw, 28px);
   line-height: 1.18;
   font-weight: 500;
+  font-family: "Arial";
 }
 
 .soft-section {
@@ -151,6 +154,7 @@ img {
 .proposal-button span:last-child {
   position: relative;
   z-index: 1;
+  font-family: "Arial";
 }
 
 .wholesale-card__contacts {
@@ -166,7 +170,6 @@ img {
 }
 
 .wholesale-card__contacts a {
-  display: block;
   color: var(--text);
   text-decoration: none;
   font-size: clamp(15px, 1.8vw, 18px);
@@ -186,7 +189,15 @@ img {
   margin-bottom: 78px;
 }
 
-.composition-block__title,
+.composition-block__title {
+  text-align: center;
+  font-size: clamp(28px, 3.4vw, 36px);
+  line-height: 1.2;
+  font-weight: 700;
+  text-wrap: balance;
+  font-family: "Arial";
+}
+
 .usage-block h2 {
   margin: 0 auto 42px;
   text-align: center;
@@ -194,11 +205,13 @@ img {
   line-height: 1.2;
   font-weight: 700;
   text-wrap: balance;
+  font-family: "Arial";
 }
 
 .composition-block__title span,
 .usage-block h2 span {
   color: var(--gold);
+  font-family: "Arial";
 }
 
 .composition-block__layout {
@@ -210,7 +223,7 @@ img {
 .composition-block__image {
   width: 100%;
   max-width: 402px;
-  height: 624px;
+  height: 400px;
   border-radius: 20px;
   object-fit: cover;
   margin: 0 auto;
@@ -220,6 +233,7 @@ img {
   display: grid;
   gap: 10px;
   align-content: start;
+  height: auto;
 }
 
 .composition-note {
@@ -229,11 +243,8 @@ img {
   font-size: clamp(16px, 1.65vw, 18px);
   line-height: 1.47;
   font-weight: 400;
-  writing-mode: horizontal-tb;
-  text-orientation: mixed;
-  white-space: normal;
-  word-break: normal;
-  overflow-wrap: normal;
+  height: auto;
+  font-family: "Arial";
 }
 
 .composition-note strong {
@@ -256,6 +267,7 @@ img {
   font-size: clamp(20px, 2vw, 24px);
   line-height: 1.25;
   font-weight: 700;
+  font-family: "Arial";
 }
 
 .usage-item__content p {
@@ -263,6 +275,7 @@ img {
   max-width: 720px;
   font-size: clamp(16px, 1.65vw, 19px);
   line-height: 1.5;
+  font-family: "Arial";
 }
 
 .usage-item__content p + p {
@@ -298,12 +311,13 @@ img {
 
   .hero-card h2 {
     margin-top: 18px;
+    font-family: "Arial";
   }
 
   .composition-block__layout {
     grid-template-columns: 400px minmax(0, 1fr);
     gap: 30px;
-    align-items: stretch;
+    align-items: start;
   }
 
   .composition-block__title {
@@ -316,8 +330,11 @@ img {
   }
 
   .composition-block__notes {
-    height: 624px;
-    grid-template-rows: 116px 116px 212px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    min-height: 0; 
   }
 
   .composition-note {
