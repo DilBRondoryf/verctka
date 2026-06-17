@@ -40,13 +40,8 @@ img {
 }
 
 .hero-block {
-  background-image: url(f/23.jpg);
+  background-image: url(f/213.jpg);
   background-size: 100% 100%;
-  /* background-color: #77b67d;
-  background:
-    linear-gradient(rgba(118, 182, 125, 0.82), rgba(118, 182, 125, 0.82)),
-    url("https://thb.tildacdn.com/tild3564-3165-4361-b433-363665636438/-/resize/20x/-min.jpg")
-      center / cover; */
   padding: 58px 0 52px;
 }
 
@@ -62,9 +57,10 @@ img {
   max-width: 1160px;
   color: #ffffff;
   text-align: center;
-  font-size: clamp(26px, 4vw, 52px);
+  font-size: 36px;
   line-height: 1.15;
   font-weight: 700;
+  font-family: "Arial";
 }
 
 .hero-card {
@@ -74,16 +70,17 @@ img {
 
 .hero-card img {
   width: 100%;
-  aspect-ratio: 335 / 200;
+  aspect-ratio: 220 / 150;
   object-fit: cover;
   border-radius: 18px;
+  transform: scale(0.9);
 }
 
 .hero-card h2 {
   margin: 18px 0 0;
   color: #ffffff;
   text-align: center;
-  font-size: clamp(22px, 2.8vw, 28px);
+  font-size: 24px;
   line-height: 1.18;
   font-weight: 500;
   font-family: "Arial";
@@ -306,6 +303,7 @@ img {
     grid-column: 1 / -1;
     max-width: 1110px;
     margin-bottom: 10px;
+    font-family: "Arial";
   }
 
   .hero-card {
